@@ -1,0 +1,6 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "footprints") (type "KiCad") (uri "C:/Users/rishi/Downloads/kicad_care_package/kicad_care_package/footprints.pretty") (options "") (descr ""))
+	(lib (name "OLED_0.91") (type "KiCad") (uri "C:/Users/rishi/Downloads/OLED_0.91.pretty") (options "") (descr ""))
+	(lib (name "mx_sk6812mini-e") (type "KiCad") (uri "C:/Users/rishi/Downloads/mx_sk6812mini-e.pretty") (options "") (descr ""))
+)
