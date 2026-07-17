@@ -4,6 +4,7 @@ from kmk.kmk_keyboard import KMKKeyboard
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.media_keys import MediaKeys
 from kmk.keys import KC
+from kmk.extensions.rgb import RGB, AnimationModes
 from kmk.scanners import DiodeOrientation
 # from kmk.modules.layers import Layers - only useful when layers needed
 from kmk.extensions.display.ssd1306 import SSD1306
@@ -18,6 +19,10 @@ encoder_handler = EncoderHandler()
 keyboard.modules.append(encoder_handler)
 encoder_handler.pins = ((board.GP26,board.GP27))
 encoder_handler.map = ((KC.VOLD, KC.VOLU))
+
+rgb = RGB(
+    pixel_pin=board.GP3, num_pixels=9, val_limit=144, animation_mode=AnimationModes.STATIC
+)
 
 keyboard.keymap = [
     [KC.Q , KC.W , KC.E ,
